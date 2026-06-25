@@ -1,5 +1,12 @@
-section input {
+.store-search-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.store-search-section input {
   padding: 0.6rem;
   width: 300px;
-  margin-top: 1rem;
+  margin-left: 8px;
 }

@@ -11,7 +11,7 @@ function ProductGrid() {
   );
 
   return (
-    <section>
+    <section className="product-grid">
       <h2>Featured Showroom Products</h2>
 
       <input
