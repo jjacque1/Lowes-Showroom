@@ -1,0 +1,29 @@
+header {
+  background: #004990;
+  color: white;
+}
+
+header section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 2rem;
+  flex-wrap: wrap;
+}
+
+header button {
+  padding: 0.5rem 1rem;
+}
+
+header input {
+  padding: 0.5rem;
+  width: 300px;
+}
+
