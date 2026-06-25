@@ -27,3 +27,11 @@ header input {
   width: 300px;
 }
 
+.link {
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  font-size: large;
+  font-weight: bold;
+}
+

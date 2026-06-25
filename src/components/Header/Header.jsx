@@ -1,10 +1,11 @@
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header>
       <section>
-        <div>Logo</div>
+        <Link to="/" className="link">logo</Link>
 
         <button>Find a store near me</button>
 
@@ -14,9 +15,9 @@ function Header() {
         </div>
 
         <nav>
-          <button>MyLowes</button>
-          <button>Sign in</button>
-          <button>Cart</button>
+          <Link to="/mylowes" className="link">MyLowes</Link>
+          <Link to="/signin" className="link">Sign in</Link>
+          <Link to="/cart" className="link">Cart</Link>
         </nav>
       </section>
 

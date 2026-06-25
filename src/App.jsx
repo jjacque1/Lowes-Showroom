@@ -1,20 +1,21 @@
-import Header from "./components/Header/Header"
-import HeroSection from "./components/HeroSection/HeroSection"
-import StoreSearch from "./components/StoreSearch/StoreSearch";
-import ProductGrid from "./components/ProductGrid/ProductGrid";
+import Home from "./pages/Home";
+import Cart from "./pages/Cart";
+import SignIn from "./pages/SignIn";
+import MyLowes from "./pages/MyLowes";
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout/Layout";
 
 function App() {
   return (
-    <div>
-      <Header />
-
-      <main>
-        <HeroSection />
-        <StoreSearch />
-        <ProductGrid />
-      </main>
-    </div>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/mylowes" element={<MyLowes />} />
+        <Route path="/signin" element={<SignIn/>}/>
+        <Route path="/cart" element={<Cart />} />
+      </Route>
+    </Routes>
   );
 }
 
